@@ -9,7 +9,7 @@ import edu.eci.cvds.patterns.shapes.Shape;
  *
  * @author 2153043
  */
-public class Pentagon {
+public class Pentagon implements Shape{
     public int getNumberOfEdges() {
         return 5;
     }

@@ -9,7 +9,7 @@ import edu.eci.cvds.patterns.shapes.Shape;
  *
  * @author 2153043
  */
-public class Quadrilateral {
+public class Quadrilateral implements Shape {
     public int getNumberOfEdges() {
         return 4;
     }
