@@ -5,28 +5,31 @@
  */
 package edu.eci.cvds.patterns.shapes;
 
+import edu.eci.cvds.patterns.shapes.concrete.*;
+
 /**
  *
  * @author 2153043
  */
 public class ShapeFactory {
      
-    public static Shape create(RegularShapeType type) {
-        Shape shape;
+	public static Shape create(RegularShapeType type){
+        Shape shape=null;
         switch(type){
             case Triangle:
-                shape = new Triangle;
+                shape = new Triangle();
 				break;
-			case Quadrilateral
-				shape = new Quadrilateral;
+			case Quadrilateral:
+				shape = new Quadrilateral();
 				break;
-			case Hexagon
-				shape = new Hexagon;
+			case Hexagon:
+				shape = new Hexagon();
 				break;
-			case Pentagon
-				shape = new Pentagon;
+			case Pentagon:
+				shape = new Pentagon();
 				break;
         }
+        return shape;
                 
     }
     
