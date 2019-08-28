@@ -8,20 +8,14 @@ public class RegistryTest {
     private Registry registry = new Registry();
 
     @Test
-    public void validateRegistryResult() {
+    public void debeSerMenorDeEdad() {
+    	registry = new Registry();
+    	Person personaA= new Person("Marcelo Vaca",01,8,Gender.MALE,true);
+    	 RegisterResult result = registry.registerVoter(personaA);
+         Assert.assertEquals(RegisterResult.UNDERAGE,result);
 
-      
-
-        RegisterResult result = registry.registerVoter(person);
-
-        Assert.assertEquals(RegisterResult.VALID, result);
-    }
-    
-    public void validateAge(){
-        Person person = new Person();
-        ///person.getAge()>18;
         
     }
-
-    // TODO Complete with more test cases
+    
+    
 }
