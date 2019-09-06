@@ -1,1 +1,3 @@
 Laboratorio_3/ClasesEquivalencia/target/*
+ /* Guice dependency injection */
+        // bind(Interface.class).to(Concrete.class);
